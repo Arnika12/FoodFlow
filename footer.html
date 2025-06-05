@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    .site-footer {
+      background-color: #333;
+      color: #ddd;
+      padding: 40px 0 10px;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .footer-section h4 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section ul li a:hover {
+      color: #fb4a36;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: #ddd;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #fb4a36;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .footer-divider {
+      color: #888;
+      margin: 0 10px;
+    }
+
+    .footer-bottom strong {
+      color: #fff;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .newsletter-form input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      flex-grow: 1;
+    }
+
+    .newsletter-form button {
+      padding: 8px 15px;
+      background-color: #fb4a36;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+      background-color: #e53d2a;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="menu.php"><i class="fas fa-utensils me-2"></i>Menu</a></li>
+          <!-- <li><a href="reservation.php"><i class="fas fa-calendar-alt me-2"></i>Reservations</a></li> -->
+          <!-- <li><a href="special-offers.php"><i class="fas fa-tag me-2"></i>Special Offers</a></li> -->
+          <!-- <li><a href="track-order.php"><i class="fas fa-truck me-2"></i>Track Order</a></li> -->
+          <li><a href="faq.php"><i class="fas fa-question-circle me-2"></i>FAQ</a></li>
+          <li><a href="contact.php"><i class="fas fa-envelope me-2"></i>Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.php"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions</a></li>
+          <li><a href="contact.php"><i class="fas fa-envelope me-2"></i>Get in Touch</a></li>
+          <li><a href="privacy-policy1.php"><i class="fas fa-shield-alt me-2"></i>Privacy Policy</a></li>
+          <li><a href="terms1.php"><i class="fas fa-file-contract me-2"></i>Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Restaurant Street, Food City, FC 12345</li>
+          <li><i class="fas fa-phone"></i> +91 9877678790</li>
+          <li><i class="fas fa-envelope"></i> info@foodflow.com</li>
+          <li><i class="fas fa-clock"></i> 10:00 AM - 10:00 PM</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Subscribe to get special offers and updates</p>
+        <form class="newsletter-form" action="subscription.php" method="POST">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 FoodFlow. All Rights Reserved. <span class="footer-divider">|</span> Authored by <strong>CodeTech IT Solutions</strong></p>
+    </div>
+  </footer>
+</body>
+</html>

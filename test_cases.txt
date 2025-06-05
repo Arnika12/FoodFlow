@@ -1,0 +1,148 @@
+FOODFLOW SYSTEM TEST CASES
+=========================
+
+1. USER AUTHENTICATION
+---------------------
+TC001: User Registration
+- Input: Valid user details (firstName, lastName, email, contact, password)
+- Expected: User account created successfully, redirected to login page
+- Actual: User account created, redirected to login page
+
+TC002: User Login
+- Input: Valid email and password
+- Expected: Successful login, redirected to menu page
+- Actual: Login successful, redirected to menu page
+
+TC003: Admin Login
+- Input: Admin credentials (email: admin@gmail.com, password: admin2024)
+- Expected: Successful admin login, redirected to admin dashboard
+- Actual: Admin login successful, redirected to admin dashboard
+
+2. MENU MANAGEMENT
+-----------------
+TC004: View Menu Categories
+- Input: Access menu page
+- Expected: Display all food categories (Appetizer, Pizza, Burger, Beverage)
+- Actual: All categories displayed correctly
+
+TC005: Add Menu Item (Admin)
+- Input: New menu item details (name, price, category, image)
+- Expected: Item added to menu successfully
+- Actual: Item added and visible in menu
+
+TC006: Update Menu Item (Admin)
+- Input: Modified item details
+- Expected: Item updated successfully
+- Actual: Changes reflected in menu
+
+3. CART MANAGEMENT
+-----------------
+TC007: Add Item to Cart
+- Input: Select item and click "Add to Cart"
+- Expected: Item added to cart, cart count updated
+- Actual: Item added, cart count incremented
+
+TC008: Update Item Quantity
+- Input: Change quantity using +/- buttons
+- Expected: Quantity updated, total price recalculated
+- Actual: Quantity changed, price updated
+
+TC009: Remove Item from Cart
+- Input: Click delete icon on cart item
+- Expected: Item removed from cart
+- Actual: Item removed, cart updated
+
+4. ORDER PROCESSING
+------------------
+TC010: Place Order
+- Input: Select items, choose payment method, submit order
+- Expected: Order placed successfully, confirmation shown
+- Actual: Order placed, confirmation received
+
+TC011: Order Status Update
+- Input: Admin updates order status
+- Expected: Status updated in user's order history
+- Actual: Status changed, visible to user
+
+TC012: Cancel Order
+- Input: User cancels pending order
+- Expected: Order cancelled, status updated
+- Actual: Order cancelled, status changed
+
+5. RESERVATION SYSTEM
+--------------------
+TC013: Make Table Reservation
+- Input: Select date, time, number of guests
+- Expected: Reservation confirmed
+- Actual: Reservation created successfully
+
+TC014: View Reservations (Admin)
+- Input: Access reservation management
+- Expected: Display all reservations
+- Actual: All reservations listed
+
+6. REVIEW SYSTEM
+---------------
+TC015: Submit Review
+- Input: Write review for completed order
+- Expected: Review submitted successfully
+- Actual: Review added to system
+
+TC016: Admin Response to Review
+- Input: Admin adds response to review
+- Expected: Response visible to user
+- Actual: Response added and visible
+
+7. PROFILE MANAGEMENT
+--------------------
+TC017: Update User Profile
+- Input: Modify profile information
+- Expected: Profile updated successfully
+- Actual: Changes saved and reflected
+
+TC018: Change Password
+- Input: Enter new password
+- Expected: Password updated
+- Actual: Password changed successfully
+
+8. PAYMENT PROCESSING
+--------------------
+TC019: Cash Payment
+- Input: Select cash payment method
+- Expected: Order processed for cash payment
+- Actual: Order accepted with cash payment
+
+TC020: Takeaway Order
+- Input: Select takeaway option
+- Expected: No delivery fee added
+- Actual: Order processed without delivery fee
+
+TEST EXECUTION NOTES
+-------------------
+1. Each test case should be executed in sequence
+2. Document any deviations from expected results
+3. Note any system errors or unexpected behavior
+4. Include screenshots for visual verification
+5. Update test results in the "Actual" column
+
+TEST ENVIRONMENT
+---------------
+- Browser: Chrome, Firefox, Safari
+- Device: Desktop, Mobile, Tablet
+- Network: Stable internet connection
+- Database: MySQL 5.7+
+- Server: Apache 2.4+
+- PHP Version: 7.4+
+
+TEST DATA
+---------
+Admin Credentials:
+- Email: admin@gmail.com
+- Password: admin2024
+
+Test User Credentials:
+- Email: test@example.com
+- Password: Test@123
+
+TEST EXECUTION DATE: [Date]
+TESTER: [Name] 
